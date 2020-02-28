@@ -8,6 +8,6 @@ data "digitalocean_ssh_key" "selected" {
   name     = each.value
 }
 
-output "ssh_key_ids" {
+output "data" {
   value = data.digitalocean_ssh_key.selected
 }
